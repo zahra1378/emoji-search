@@ -1,0 +1,124 @@
+.Home{
+    padding: 1.5rem;
+    width: 75%;
+    margin: 0 auto;
+    background-color: #FFF9E5;
+    min-height: 67vh;
+}
+.emoji_box{
+    padding: 1rem 0 0 0;
+}
+.emoji_box_title{
+    font-size: 3rem;
+    color: #004030;
+}
+.emojis_container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 1.5rem 2rem;
+}
+.emoji_card{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    margin: 1rem;
+    box-shadow: 0 5px 15px;
+    border-radius: 15px;
+    width: 15%;
+    background-color: #fff;
+    animation: fadeIn 500ms;
+}
+.emoji_symbol{
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+.emoji_title{
+    font-size: 1.2rem;
+}
+.loading_data{
+    font-size: 1.2rem;
+    color: #4A9782;
+}
+.Pagination{
+    width: 50%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    list-style-type: none;
+}
+.paginationBTN{
+    font-size: 1.2rem;
+    margin: 0.5rem;
+    flex: 1;
+    border-radius: 50%;
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.active button{
+    background-color: #DCD0A8;
+}
+@media (min-width: 1024px) and (max-width: 1450px) {
+    .emoji_box_title{
+        font-size: 2rem;
+    }
+    .emoji_card{
+        padding: 0.5rem;
+    }
+    .emoji_symbol{
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+    .emoji_title{
+        font-size: 1rem;
+    }
+    .emoji_card {
+        width: 20%;
+    }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+    .emoji_box_title{
+        font-size: 2rem;
+    }
+    .Home{
+        width: 85%;
+    }
+    .emoji_symbol{
+        font-size: rem;
+        margin-bottom: 0.5rem;
+    }
+    .emoji_title{
+        font-size: 1rem;
+    }
+    .emoji_card {
+        width: 25%;
+    }
+}
+@media (max-width: 769px){
+    .Home{
+        width: 85%;
+    }
+    .emoji_box_title{
+        font-size: 1.7rem;
+    }
+    .emoji_card {
+        width: 25%;
+    }
+}
+
+@keyframes fadeIn{
+    0%{
+        margin-top: -20%;
+        opacity: 0;
+    }
+    100%{
+        margin-top: 1rem;
+        opacity: 1;
+    }
+}

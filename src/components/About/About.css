@@ -1,0 +1,37 @@
+.About{
+    padding: 3rem;
+}
+.About_container{
+    width: 65%;
+    margin: 0 auto;
+    padding: 1.5rem;
+    background-color: #FFF9E5;
+    color: #004030;
+    border-radius: 15px;
+    box-shadow: 0 10px 15px;
+}
+.About_title{
+    font-size: 3rem;
+}
+.About_text{
+    font-size: 2rem;
+    width: 80%;
+    margin: 0 auto;
+    color: #004030;
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+    .About_title{
+        font-size: 2rem;
+    }
+    .About_text{
+        font-size: 1.5rem;
+    }
+}
+@media (max-width: 769px){
+    .About_title{
+        font-size: 1.7rem;
+    }
+    .About_text{
+        font-size: 1.3rem;
+    }
+}

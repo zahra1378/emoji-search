@@ -1,0 +1,70 @@
+.Navbar{
+    background-color: #004030;
+    color: #E8FFD7;
+}
+.Navbar_title{
+    font-size: 2rem;
+}
+.Navbar_container{
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    padding: 1rem;
+    width: 80%;
+    margin: 0 auto;
+}
+.title_container{
+    justify-self: start;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.emoji_icon {
+    width: 5rem;
+    height: 5rem;
+}
+.Nabar_list{
+    justify-self: end;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Navbar_list_item{
+    margin-right: 1rem;
+    text-decoration: none;
+    color: #E8FFD7;
+    font-size: 1.5rem;
+    padding: 0 0.5rem;
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .Navbar_title{
+        font-size: 1.5rem;
+    }
+    .Navbar_list_item{
+        font-size: 1.3rem;
+        padding: 0 0.3rem;
+    }
+    .Navbar_container{
+        display: flex;
+        justify-content: space-between;
+    }
+}
+@media (max-width: 769px){
+    .Navbar_title{
+        font-size: 1.3rem;
+    }
+    .Navbar_list_item{
+        font-size: 1rem;
+        padding: 0 0.3rem;
+    }
+    .Navbar_container{
+        display: flex;
+        justify-content: space-between;
+    }
+    .emoji_icon {
+        width: 3rem;
+        height: 3rem;
+    }
+}
